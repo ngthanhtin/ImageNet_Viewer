@@ -122,7 +122,7 @@ class Iwindow(QtWidgets.QMainWindow, gui):
             current_image_path = self.logs[self.cntr]['path']
             f_name = current_image_path.split('/')[-1]
             shutil.copyfile(current_image_path, self.saved_folder + f'/{f_name}')
-            QtWidgets.QMessageBox.warning(self, 'OK', f'You have already saved the image at {self.saved_folder}!')
+            # QtWidgets.QMessageBox.warning(self, 'OK', f'You have already saved the image at {self.saved_folder}!')
 
             #make them appear on the widget
             self.saved_logs = getImages(self.saved_folder)
